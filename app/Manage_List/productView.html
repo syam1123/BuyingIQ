@@ -1,0 +1,15 @@
+<div ng-controller="productViewCtrl">
+    <input type="text" ng-model="q" ng-change="callFilter()" placeholder="Search for a product">
+    <select ng-model="tags" ng-options="tag in tags" ng-change="callFilter()" multiple="true"></select>
+    Facet : <input ng-model="facet" ng-change="callFilter()" type="number" min="0">
+    Page No : <input ng-model="page" ng-change="callFilter()" type="number" min="1">
+
+    <div class="container">
+        <div class="row" ng-repeat="product in product_list">
+            <div flex="33">{{product.image}}</div>
+            <div flex="33">{{product.count}} remaining</div>
+            <div flex="33">{{product.label}}</div>
+            <div flex="80">{{product.price}}</div>
+        </div>
+    </div>
+</div>
