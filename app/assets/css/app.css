@@ -10,9 +10,11 @@
 	position: relative;
 }
 .header{
-	height: 70px;
+	/*height: 100px;*/
 	background-color: #114875;
 	padding-left: 100px;
-	padding-top: 10px;
-	margin: 100px;
+	line-height: 1.35rem;
+}
+.header img{
+	padding: 10px 0px;
 }
